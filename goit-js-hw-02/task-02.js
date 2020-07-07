@@ -6,9 +6,6 @@ const calculateEngravingPrice = function (message, pricePerWord) {
     
     return(totalPrice);
   };
-
-
-
   
   /*
    * Виклич функції для перевірки працездатності твоєї реалізації.

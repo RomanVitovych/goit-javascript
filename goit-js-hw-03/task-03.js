@@ -1,13 +1,23 @@
+
+
+
+
+
+
 const findBestEmployee = function (employees) {
-    let bestEmployee = '';
-    let tempTaskCount = 0;
+    const values = Object.values(employees);
+    const keys = Object.keys(employees);
+    let bestEmployee = keys[0];
+    let tempTaskCount = values[0];
 
-    for (let employee in employees) {
-        // console.log(employee)
+    for (let i = 0; i < values.length; i +=1) {
         
-
-    }
-    
+      if (values[i] > tempTaskCount) {
+        tempTaskCount = values[i];
+        bestEmployee = keys[i];
+      }
+    }  
+    return `${bestEmployee} : ${tempTaskCount}`
   };
   
   

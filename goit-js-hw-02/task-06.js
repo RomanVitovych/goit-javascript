@@ -21,11 +21,8 @@ while (input !== null) {
         
         if (input !== Number) {
             console.log('Було введено не число, попробуйте ще раз' )
-        }    
-    
-    }
-    
-    numbers.push(Number(input));
-         
+        }        
+    }    
+    numbers.push(Number(input));        
 }
 
