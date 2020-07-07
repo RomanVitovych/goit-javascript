@@ -1,24 +1,30 @@
-// Функція вищого порядку
-
-const fruits = [
-    {name: 'oranges', price: 100},
-    {name: 'bananas', price: 30},
-    {name: 'apples', price: 50},
-]
-
-const toByProducts = function (list, cb) {
-    console.log(list);
-    cb(list);
-}
-
-// function 1
-
-const goToMarket = function (object) {
-    const totalPrice = 0;
-    for(const item of object) {
-        const keys = object.keys(item);
-    
-        console.log(keys);
-
-    }
-}
+const inventory = {
+    items: ['Knife', 'Gas mask'],
+    add(itemName) {
+      console.log(`Adding ${itemName} to inventory`);
+  
+      this.items.push(itemName);
+    },
+    remove(itemName) {
+      console.log(`Removing ${itemName} from inventory`);
+  
+      this.items = this.items.filter(item => item !== itemName);
+    },
+  };
+  
+  const invokeInventoryAction = function (itemName, action) {
+    console.log(`Invoking action on ${itemName}`);
+    action(itemName);
+  };
+  
+  invokeInventoryAction('Medkit', inventory.add);
+  // Invoking action on Medkit
+  // Adding Medkit to inventory
+  
+  console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+  
+  invokeInventoryAction('Gas mask', inventory.remove);
+  // Invoking action on Gas mask
+  // Removing Gas mask from inventory
+  
+  console.log(inventory.items); // ['Knife', 'Medkit']
