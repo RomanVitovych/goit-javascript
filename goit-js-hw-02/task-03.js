@@ -10,9 +10,6 @@ const findLongestWord = function (string) {
     }
     return longestWord
   };
-
-
-
   
   /*
    * Виклич функції для перевірки працездатності твоєї реалізації.

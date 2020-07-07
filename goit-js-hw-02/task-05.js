@@ -7,12 +7,8 @@ const checkForSpam = function (message) {
 
     } else {
         return 'false'
-    }
-    
+    }  
   };
-
-
-
 
   
   /*
