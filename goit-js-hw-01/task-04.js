@@ -11,7 +11,7 @@ if (amountDroids === null) {
 } else if (totalPrice > credits) {
     message = 'Недостатньо коштів на рахунку!';
 } else  {
-    message = 'Ви купили', amountDroids, 'дроїдів, на рахунку залишилося', value, 'кредитів.';
+    message = `Ви купили ${amountDroids} дроїдів, на рахунку залишилося ${value} кредитів.`;
 }
 
 console.log(message);
