@@ -8,13 +8,16 @@ const products = [
   const getAllPropValues = function (arr, prop) {
       const arrProp = [];
 
-      for (const item of arr) {
-          if (prop in item) {
-              arrProp = 
+      for (let item of arr) {
+          for(let property in item) {
+            if (prop === property) {
+                arrProp.push(item[property]);
+            }
           }
       }
-    
-  };
+      return arrProp;
+  }
+
   
   /*
    * Викличи функції для перевірки працездатності твоєї реалізації.
