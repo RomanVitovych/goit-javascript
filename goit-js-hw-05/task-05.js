@@ -90,7 +90,7 @@ const mustang = new Car({
     maxSpeed: 200,
     price: 2000
 });
-console.log(mustang)
+
 
 mustang.turnOn();
 mustang.accelerate(50);

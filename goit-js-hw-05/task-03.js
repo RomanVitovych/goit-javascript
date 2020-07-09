@@ -10,7 +10,6 @@ class Storage {
     }
     removeItem(item) {
         for (let el = 0; el < this.items.length; el += 1) {
-            console.log(this.items[el]);
             if (this.items[el] === item) {
                 return this.items.splice(el, 1);
             }
