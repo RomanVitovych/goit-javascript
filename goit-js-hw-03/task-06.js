@@ -9,10 +9,10 @@ const products = [
     let totalPriace = 0;
 
     for (const product of allProdcuts) {
-        if (product.name === productName);
-        totalPriace = product.price*product.quantity;
-
-        return totalPriace
+        if (product.name === productName) {
+          totalPriace = product.price * product.quantity;
+          return totalPriace
+        }
     }
   };
   
