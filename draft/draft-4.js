@@ -32,36 +32,36 @@
 
 // ========== TASK-02 ==========
 
-const inventory = {
-  items: ['Knife', 'Gas mask'],
-  add(itemName) {
-    console.log(`Adding ${itemName} to inventory`);
+// const inventory = {
+//   items: ['Knife', 'Gas mask'],
+//   add(itemName) {
+//     console.log(`Adding ${itemName} to inventory`);
 
-    this.items.push(itemName);
-  },
-  remove(itemName) {
-    console.log(`Removing ${itemName} from inventory`);
+//     this.items.push(itemName);
+//   },
+//   remove(itemName) {
+//     console.log(`Removing ${itemName} from inventory`);
 
-    this.items = this.items.filter(item => item !== itemName);
-  },
-};
+//     this.items = this.items.filter(item => item !== itemName);
+//   },
+// };
 
-const invokeInventoryAction = function (itemName, action) {
-  console.log(`Invoking action on ${itemName}`);
-  action(itemName);
-};
+// const invokeInventoryAction = function (itemName, action) {
+//   console.log(`Invoking action on ${itemName}`);
+//   action(itemName);
+// };
 
-invokeInventoryAction('Medkit', inventory.add.bind(inventory));
-// Invoking action on Medkit
-// Adding Medkit to inventory
+// invokeInventoryAction('Medkit', inventory.add.bind(inventory));
+// // Invoking action on Medkit
+// // Adding Medkit to inventory
 
-console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
+// console.log(inventory.items); // ['Knife', 'Gas mask', 'Medkit']
 
-invokeInventoryAction('Gas mask', inventory.remove.bind(inventory));
-// Invoking action on Gas mask
-// Removing Gas mask from inventory
+// invokeInventoryAction('Gas mask', inventory.remove.bind(inventory));
+// // Invoking action on Gas mask
+// // Removing Gas mask from inventory
 
-console.log(inventory.items); // ['Knife', 'Medkit']
+// console.log(inventory.items); // ['Knife', 'Medkit']
 
 
 
@@ -168,7 +168,11 @@ console.log(inventory.items); // ['Knife', 'Medkit']
 //         privateValue += 1;
 //         console.log(privateValue);
 //     };
-//     return { increment, };
+//     const decrement = function () {
+//         privateValue -= 2;
+//         console.log(privateValue);
+//     }
+//     return { increment, decrement, };
 // };
 // const counterA = createCounter();
 // counterA.increment();
@@ -177,8 +181,13 @@ console.log(inventory.items); // ['Knife', 'Medkit']
 // const counterB = createCounter();
 // counterB.increment();
 // counterB.increment();
+// const counterC = createCounter();
+// counterC.decrement();
+// counterC.decrement();
+// counterC.decrement();
 // console.dir(counterA.increment);
 // console.dir(counterB.increment);
+// console.dir(counterC.decrement);
 
 
 // const makeShef = function (name) {
@@ -210,6 +219,58 @@ console.log(inventory.items); // ['Knife', 'Medkit']
 
 
 
+// === this ===
+
+// const showThis = function () {
+//     console.log('This in showThis:', this);
+// };
+// showThis();
+// const user = { name: 'Mango', };
+// user.showContext = showThis;
+// user.showContext();
+
+
+
+// === this у функціх зворотнього виклику(undefined) ===
+
+// const hotel = {
+//     name: 'Mango',
+//     showThis() {
+//         console.log('This in showThis;', this);
+//     },
+// };
+// const fn = function (callback) {
+//     callback()
+// };
+// fn(hotel.showThis);
+
+
+
+// === this у стрілкових функціях(undefined і другий варіант) ===
+
+// const showThis = () => {
+//     console.log('This in showThis:', this);
+// };
+// showThis();
+// const user = { name: 'Mango' };
+// user.showContext = showThis;
+// user.showContext();
+
+
+// const hotel = {
+//     name: 'Hotel Resort',
+//     showThis() {
+//         const fn = () => {
+//             console.log('This in fn:', this);
+//         };
+//         fn();
+//         console.log('This in showThis:', this);
+//     },
+// };
+// hotel.showThis();
+
+
+
 // === методи функцій call, apply, bind ===
 
 // const showTag = function (arg1, arg2, arg3) {
@@ -223,16 +284,40 @@ console.log(inventory.items); // ['Knife', 'Medkit']
 // const poly = {
 //     tag: 'Poly',
 // };
-// // showTag.call(mango, 1, 2, 3);
-// // showTag.call(poly, 5, 10, 15);
+// showTag.call(mango, 1, 2, 3);
+// showTag.call(poly, 5, 10, 15);
 
-// // showTag.apply(mango, [1, 2, 3]);
-// // showTag.apply(poly, [5, 10, 15]);
+// showTag.apply(mango, [1, 2, 3]);
+// showTag.apply(poly, [5, 10, 15]);
 
 // const showMangoTag = showTag.bind(mango);
 // const showPolyTag = showTag.bind(poly);
 // showMangoTag();
 // showMangoTag(1, 2, 3);
+
+// = apply =
+
+// const greet = function (guest, stars) {
+//     console.log(`${guest} welcom to ${stars} - stars ${this.name}`);
+// };
+// const hotel = { name: 'Resort Hotel', };
+// const motel = { name: 'Sunlight Motel' };
+// greet.call(hotel, 'Mango', 5);
+// greet.call(motel, 'Poly', 3);
+
+// = bind =
+
+// const hotel = {
+//     name: 'Resort Hotel',
+//     showThis() {
+//         console.log('This in hotel:', this);
+//     },
+// };
+// const fn = function (callback) {
+//     callback();
+// };
+// fn(hotel.showThis.bind(hotel));
+
 
 
 // =====================================================================
