@@ -1,3 +1,5 @@
+// ===========================================================================
+
 // const numberInputRef = document.querySelector('input[name="number"]');
 // console.log(numberInputRef.value);
 
@@ -19,6 +21,8 @@
 // });
 
 
+
+// =============================================================================
 
 // const valueInputRef = document.querySelector('.js-value');
 // const addValueBtn = document.querySelector('.js-add-value');
@@ -42,5 +46,17 @@
 
 
 
+// ===============================================================================
+
+// const cart = {
+//     items: ['Телефон', 'Навушники'],
+//     showItems () {
+//         console.log('this:', this);
+//         console.log('this.items:', this.items);
+//     },
+// };
+// document
+//     .querySelector('.js-show-items')
+//     .addEventListener('click', cart.showItems.bind(cart));
 
 

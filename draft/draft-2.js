@@ -340,7 +340,7 @@
 // // const slugs = arrays.join('___');
 // // console.log(slugs);
 // const words = strings.toUpperCase().split(' ')
-// let slugs = '';
+// let slugs = words.join('--');
 // console.log(slugs);
 
 
@@ -365,7 +365,7 @@
 // const word = 'dolor';
 // const index = arrayString.indexOf(word);
 // console.log(index);
-// const del = arrayString.splice(index, 5);
+// const del = arrayString.splice(index, 4);
 // console.log(arrayString);
 
 
