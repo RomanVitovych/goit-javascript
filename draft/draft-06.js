@@ -105,7 +105,8 @@ let users = allUsers.default;
 //   // твій код
 //     return users
 //         .filter(user => user.friends
-//         .some(friend => friend === friendName))
+//         .includes(friendName))    
+//         // .some(friend => friend === friendName)) ===== альтернативний варіант
 //         .map(one => one.name)
 // };
 
@@ -145,6 +146,7 @@ let users = allUsers.default;
 
 // console.log(getSortedUniqueSkills(users));
 // // [ 'adipisicing', 'amet', 'anim', 'commodo', 'culpa', 'elit', 'ex', 'ipsum', 'irure', 'laborum', 'lorem', 'mollit', 'non', 'nostrud', 'nulla', 'proident', 'tempor', 'velit', 'veniam' ]
+
 
 
 
