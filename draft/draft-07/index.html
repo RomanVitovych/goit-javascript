@@ -4,9 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
     <title>Document</title>
 </head>
 <body>
+
+    <!-- ========== TASK-01 ========== -->
+
+    <!-- <ul id="categories">
+        <li class="item">
+            <h2>Тварини</h2>   
+            <ul>
+                <li>Кіт</li>
+                <li>Хом'як</li>
+                <li>Кінь</li>
+                <li>Папуга</li>
+            </ul>
+        </li>
+        <li class="item">
+            <h2>Продукти</h2>   
+            <ul>
+                <li>Хліб</li>
+                <li>Петрушка</li>
+                <li>Сир</li>
+            </ul>
+        </li>
+        <li class="item">
+            <h2>Технології</h2>   
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node</li>
+            </ul>
+        </li>
+    </ul> -->
+
+
+
+    <!-- ========== TASK-02 ========== -->
+
+    <!-- <ul id="ingredients"></ul> -->
+
+
+    
+    <!-- ========== TASK-03 ========== -->
+
+    <!-- <ul id="gallery"></ul> -->
+
+
+
+    <!-- ========== TASK-04 ========== -->
+
+    <!-- <div id="counter">
+        <button type="button" data-action="decrement">-1</button>
+        <span id="value">0</span>
+        <button type="button" data-action="increment">+1</button>
+    </div> -->
+
+
+
+    <!-- ========== TASK-05 ========== -->
+
+    <!-- <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+    <h1>Привіт, <span id="name-output">незнайомець</span>!</h1> -->
+
+
+
+    <!-- ========== TASK-06 ========== -->
+
+    <!-- <input type="text" id="validation-input" data-length="6" placeholder="Введи 6 символів" /> -->
+
+
+
+    <!-- ========== TASK-07 ========== -->
+
+    <!-- <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span> -->
+
+
+
+    <!-- ========== TASK-08 ========== -->
+
+    <!-- <div id="controls">
+        <input type="number" min="0" max="100" step="1" />
+        <button type="button" data-action="render">Створити</button>
+        <button type="button" data-action="destroy">Очистити</button>
+    </div>
+    
+    <div id="boxes"></div> -->
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <!-- ===== пошук DOM вузлів ===== -->
         <!-- <ul id="menu">
@@ -29,12 +139,208 @@
 
         
         <!-- ===== властивість textContent ===== -->
-        <article class="article">
+        <!-- <article class="article">
             <h2 class="article-title">Welcome to Hawaii!</h2>
             <p class="article-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quaerat nemo veritatis
                 quasi eius eum aliquid, nobis dolore nisi, magnam eaque iusto, necessitatibus atque laborum quam tempora ducimus
                 dicta ipsam.</p>
-        </article>
+        </article> -->
+
+
+        <!-- ===== властивість classList ===== -->
+        <!-- <p id="paragraph" class="text red big">Proin magna. Sed mollis, eros et ultrices tempus, mauris ipsum aliquam libero,
+            non adipiscing dolor urna a orci. Etiam rhoncus. Donec mi odio, faucibus at, scelerisque quis, convallis in, nisi.
+        </p> -->
+
+
+        <!-- ===== атрибути ===== -->
+        <!-- <img class="image" src="https://placeimg.com/400/200/nature" alt="lake and clouds"> -->
+
+
+        <!-- ===== data-атрибути ===== -->
+        <!-- <div class="editor">
+            <p>Donec id justo. Praesent porttitor, nulla vitae posuere iaculis, arcu nisl dignissim dolor, a pretium mi sem ut
+                ipsum. Curabitur suscipit suscipit tellus. Phasellus gravida semper nisi.</p>
+            <div class="actions">
+                <button type="button" class="btn" data-action="save">Save</button>
+                <button type="button" class="btn" data-action="close">Close</button>
+            </div>
+        </div>
+        
+        <ul class="dishes">
+            <li data-id="14">Baked Yak &amp; Mushrooms</li>
+            <li data-id="7">Strawberry Pancakes</li>
+            <li data-id="3">Caramel Toffee</li>
+            <li data-id="61">Pistachio Elderberry Wafer</li>
+        </ul> -->
+
+
+        <!-- ===== Додавання DOM-вузла ===== -->
+        <!-- <div class="container center">
+            <nav class="nav white">
+                <a href="#" class="btn">item 1</a>
+                <a href="#" class="btn">item 2</a>
+                <a href="#" class="btn">item 3</a>
+            </nav>
+        </div> -->
+
+
+        <!-- ===== Методи append/prepend, before/after, replaceWith ===== -->
+        <!-- <div class="container">
+            <ul class="list">
+                <li>Mango</li>
+            </ul>
+        </div> -->
+
+
+        <!-- =====  Видалення DOM-вузла ====== -->
+        <!-- <article class="article">
+            <h2 class="title">Article title</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa quibusdam! Praesentium
+                accusantium fugiat distinctio quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque explicabo
+                perspiciatis, consectetur non.</p>
+            <a class="link" href="">Read more</a>
+        </article> -->
+
+
+        <!-- ===== Клонування ===== -->
+        <!-- <div class="parent">
+            <article class="article">
+                <h2>Article title</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, natus unde enim deleniti quod amet tempore
+                    officia, possimus non iure vitae quasi reiciendis!</p>
+            </article>
+        </div> -->
+
+
+        <!-- ===== створення вузлів innerHTML ===== -->
+        <!-- <article class="article">
+            <h2>Article title</h2>
+        </article>       
+        <hr>      
+        <section>
+            <h2>Latest Technologies</h2>
+            <ul class="list"></ul>
+        </section> -->
+
+
+        <!-- ===== Метод insertAdjacentHTML() ===== -->
+        <!-- <ol id="list">
+            <li>0</li>
+            <li>1</li>
+            <li>2</li>
+        </ol> -->
+
+
+
+        <!-- ===== ПОДІЇ Метод elem.addEventListener() ===== -->
+        <!-- <button id="single" class="btn">SINGLE CALLBACK</button>
+        <hr>
+        <button id="multiple" class="btn">MULTIPLE CALLBACKS</button> -->
+
+
+        <!-- ===== ПОДІЇ Метод elem.removeEventListener() ===== -->
+        <!-- <button class="btn" data-action="add">Add Listener</button>
+        <button class="btn" data-action="remove">Remove Listener</button>
+        <hr>
+        <button id="btn" class="btn">CLICK ME!</button> -->
+
+
+        <!-- ===== Об'єкт події ===== -->
+        <!-- <button id="btn" class="btn">CLICK ME!</button> -->
+
+
+        <!-- ===== Подія submit ===== -->
+        <!-- <form class="form">
+            <input type="text" placeholder="Login">
+            <input type="password" placeholder="Password">
+            <button class="btn" type="submit">Зарегистрироваться</button>
+        </form> -->
+
+
+        <!-- ===== KeyboardEvent.key і KeyboardEvent.code ===== -->
+        <!-- <div class="container">
+            <button type="button" data-action="clear">Clear Input</button>        
+            <div class="log-list"></div>
+        </div> -->
+
+
+        <!-- ============================================================ -->
+        <!-- <div class="products js-products"></div> -->
+
+
+        <!-- ===== події сабміту форми ===== -->
+        <!-- <form class="js-register-form">
+            <div role="group">
+                <label>Name
+                    <input name="name" type="text" autocomplete="off">
+                </label>
+                <label>Email
+                    <input name="email" type="email" autocomplete="off">
+                </label>
+                <label>Password
+                    <input name="password" type="password">
+                </label>
+            </div>
+            <br>
+            <div role="group">Виберіть тип підписки:
+                <label>
+                    <input name="subscription" type="radio" value="free">
+                    Free
+                </label>
+                <label>
+                    <input name="subscription" type="radio" value="basic">
+                    Basic
+                </label>
+                <label>
+                    <input name="subscription" type="radio" value="pro">
+                    Pro
+                </label>
+            </div>
+            <br>
+            <button type="submit">Зареєструватись!</button>
+        </form> -->
+
+
+        <!-- ===== події input ===== -->
+        <!-- <label>Ім'я
+            <input type="text" class="js-input">
+        </label>
+        <p>
+            <label>
+                <input type="checkbox" class="js-license">
+                Приймаю ліцензійну угоду
+            </label>
+        </p>
+        <button type="button" disabled class="js-button">
+            Зареєструватись як 
+            <span>Анонім</span>
+        </button> -->
+
+
+        <!-- ===== події клавіатури ===== -->
+        <!-- <p class="js-output"></p>
+        <button class="js-clear">Очистити!</button> -->
+
+
+        <!-- ===== МОДАЛЬНЕ ВІКНО =====  -->
+        <!-- <button class="button" data-action="open-modal">
+            Open modal window
+        </button>
+        <div class="backdrop js-backdrop">
+            <div class="modal">
+                <h2>Modal window!</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus nostrum veritatis labore architecto consequuntur excepturi adipisci iusto voluptates sed eveniet, illo odit reiciendis aspernatur temporibus itaque fugiat exercitationem! Quo eius nulla, quia deleniti magnam non officia eum, animi modi facilis nesciunt voluptates accusantium neque dignissimos expedita odit dicta officiis, voluptas perferendis! Maxime, dolores voluptatum! Placeat obcaecati asperiores quidem, velit, totam dolore ducimus animi iste fuga quam enim magni repudiandae labore quaerat odit illo sapiente, aperiam fugiat. Impedit repudiandae soluta adipisci illo. Quae, quam. Iste eligendi odio nihil voluptas vitae, corporis sapiente explicabo dignissimos error accusantium dolorem praesentium nobis esse. Eligendi.</p>
+                <button type="button" class="button" data-action="close-modal">
+                    Close
+                </button>
+            </div>
+        </div> -->
+
+
+
+
+
 
         
         <script src="./draft-07.js" type="module"></script>
