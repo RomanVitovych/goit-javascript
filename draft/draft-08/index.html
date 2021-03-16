@@ -9,8 +9,78 @@
 </head>
 <body>
 
+    <!-- ========== TASK ========== -->
+
+    <!-- В этот список добавляй элементы галереи -->
+    <ul class="gallery js-gallery"></ul>
+    
+    <!--
+          Модальное окно для полноразмерного изображения
+          Для того чтобы открыть, необходимо добавить на div.lightbox CSS-класс is-open
+        -->
+    <div class="lightbox js-lightbox">
+        <div class="lightbox__overlay"></div>
+    
+        <div class="lightbox__content">
+            <img class="lightbox__image" src="" alt="" />
+        </div>
+    
+        <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========== Спливання події ========== -->
+
+    <!-- <div id="parent">
+        PARENT
+        <div id="child">
+            CHILD
+            <div id="inner-child">INNER-CHILD</div>
+        </div>
+    </div> -->
+    
+
+
+    <!-- ========== Делегування ========== -->
+
+    <!-- <ul class="nav js-nav">
+        <li><a href="#" class="btn" data-value="html">HTML</a></li>
+        <li><a href="#" class="btn" data-value="css">CSS</a></li>
+        <li><a href="#" class="btn" data-value="javascript">JavaScript</a></li>
+        <li><a href="#" class="btn" data-value="npm">NPM</a></li>
+        <li><a href="#" class="btn" data-value="babel">Babel</a></li>
+        <li><a href="#" class="btn" data-value="webpack">Webpack</a></li>
+        <li><a href="#" class="btn" data-value="react">React</a></li>
+        <li><a href="#" class="btn" data-value="redux">Redux</a></li>
+        <li><a href="#" class="btn" data-value="nodejs">NodeJS</a></li>
+    </ul>
+    <p class="js-active-tag"></p> -->
+
+
+
+
 
     <script src="./draft-08.js" type="module"></script>
+    <script src="./gallery-items.js" type="module"></script>
     
 </body>
 </html>
