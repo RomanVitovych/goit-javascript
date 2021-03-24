@@ -114,8 +114,8 @@ body {
 
 .lightbox__button {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 10px;
+  right: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,7 +130,7 @@ body {
   cursor: pointer;
   transition: background-color var(--animation-duration) var(--timing-function);
   outline: none;
-  background-image: url('../images/icon-close.svg');
+  background-image: url('./images/icon-close.svg');
   background-position: center;
   background-size: 60%;
   background-repeat: no-repeat;
@@ -138,6 +138,44 @@ body {
 
 .lightbox__button:hover,
 .lightbox__button:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* ========== додаткові кнопки ========== */
+
+.prevBtn, .nextBtn {
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 35px;
+  margin: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: lawngreen;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color var(--animation-duration) var(--timing-function);
+  outline: none;
+  background-position: center;
+  background-size: 60%;
+  background-repeat: no-repeat;
+}
+.prevBtn:hover,
+.prevBtn:focus {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nextBtn {
+  left: 110%;
+}
+.nextBtn:hover,
+.nextBtn:focus {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -235,4 +273,62 @@ body {
 .btn.active {
   color: #fff;
   background-color: #2196f3;
+} */
+
+
+
+
+
+/* ========== Intersection Observer API ========== */
+
+/* .box {
+  width: 400px;
+  height: 400px;
+  font-size: 128px;
+  text-align: center;
+  line-height: 400px;
+  color: #fff;
+  margin-bottom: 64px;
+}
+
+.box:nth-child(1) {
+  background-color: #3f51b5;
+}
+.box:nth-child(2) {
+  background-color: #ff5722;
+}
+.box:nth-child(3) {
+  background-color: #00bcd4;
+}
+.box:nth-child(4) {
+  background-color: #ff4081;
+} */
+
+
+
+
+
+/* ========== ліниве завантаження зображеннь ========== */
+
+/* .feed {
+  list-style: none;
+}
+
+.feed li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.feed img {
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all 500ms linear;
+  width: 640px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 5%;
+}
+
+.feed img.appear {
+  transform: translateX(0);
+  opacity: 1;
 } */

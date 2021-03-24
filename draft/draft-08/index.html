@@ -23,6 +23,8 @@
     
         <div class="lightbox__content">
             <img class="lightbox__image" src="" alt="" />
+            <button class="prevBtn js-prev">Prev</button>
+            <button class="nextBtn js-next">Next</button>
         </div>
     
         <button type="button" class="lightbox__button" data-action="close-lightbox"></button>
@@ -77,8 +79,120 @@
 
 
 
+    <!-- ============================================================= -->
+
+    <!-- ===== подія mousemove(throttle) ===== -->
+    <!-- <p class="js-coords"></p> -->
 
 
+    <!-- ===== подія input(debounce) ===== -->
+    <!-- <input type="text" class="js-input">
+    <p class="js-output"></p> -->
+
+
+
+    <!-- ========== Intersection Observer API ========== -->
+
+    <!-- <div class="boxes">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box js-box">3</div>
+        <div class="box">4</div>
+    </div> -->
+
+
+
+
+
+    <!-- ========== ліниве завантаження зображеннь ========== -->
+    <!-- <ul class="feed">
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/constant-loubier-eWuc6TXc8Ok-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum, voluptatem sequi. Quae aperiam quis repudiandae tempore ex doloremque quidem minus enim officia, ad rerum praesentium at labore asperiores odit ab voluptatem perspiciatis tenetur eum reiciendis dolores dignissimos qui doloribus. Reprehenderit commodi magni rem vero tempora, quasi illo quas eius, iure praesentium vel alias accusantium impedit explicabo cumque harum nam optio consectetur obcaecati maiores modi temporibus, consequuntur animi! Animi fugiat, exercitationem eveniet ducimus inventore maiores vitae magni mollitia saepe deserunt totam similique obcaecati cumque molestias iusto deleniti dicta illo perspiciatis quidem alias incidunt eaque itaque nostrum sed! Inventore incidunt placeat iusto.</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/dyra-abstraktsiia-3d-wormhole-model.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/error-420-RtqgZ6w2ILc-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/felipe-cotrim-_0sJ3QB6DkI-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/frank-mckenna-OD9EOzfSOh0-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/huper-by-joshua-earle-cGS5ywfD2Fs-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/makro-listok-zhilki-voda-kapli.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/priroda-ozero-peizazh-gornye-vershiny-gory.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/priroda-peyzazh-more-reka-voda.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/quino-al-mBQIfKlvowM-unsplash.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/volny-volnistyi-iskazhenie.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+        <li class="feed_item">
+            <img data-lazy="./imagesDraft/shar-polosy-ball-stripes-alberto-bissacco.jpg" 
+            alt="no image(((" 
+            width="640">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum consequatur pariatur voluptatibus, nemo quidem id expedita cumque error! Debitis ullam sunt fuga cupiditate placeat nihil officia laudantium ipsum atque sit dolorem rerum quis explicabo, doloremque eos, ipsam officiis rem illum earum quae obcaecati temporibus totam ex facere? Eligendi alias eius voluptatum quibusdam, doloremque impedit quia in possimus, consequatur, omnis perferendis reprehenderit natus assumenda? Impedit suscipit sapiente voluptatem inventore aut magni voluptatibus! Nulla voluptatibus, ipsam, nesciunt aut iure ea officiis exercitationem omnis dolores laudantium ullam at fugiat quae provident officia, praesentium aspernatur ad? Expedita, earum excepturi illum dolor cum fuga id!</p>
+        </li>
+    </ul> -->
+
+
+    
+
+
+
+
+
+
+
+
+
+    <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=IntersectionObserver"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
     <script src="./draft-08.js" type="module"></script>
     <script src="./gallery-items.js" type="module"></script>
     
